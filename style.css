@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gloock', serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(186, 188, 197, 0.7),rgba(158, 164, 179, 0.7)),url(images/campusImage.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    /*  occupy all the space in the row */
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    /* horizontally get arranged */
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+       content: '';
+       width: 0%;
+       height: 2px;
+       background-color: royalblue;
+       display: block;
+       margin: auto;
+       transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    padding: 12px;
+}

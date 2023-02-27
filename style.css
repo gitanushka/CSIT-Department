@@ -397,3 +397,13 @@ h3{
 .about-col p{
     padding: 15px 0 25px;
 }
+
+.v-btn{
+    border: 1px solid #882cf1;
+    background: transparent;
+    color:#882cf1; 
+}
+
+.v-btn:hover{
+    color: #fff;
+}

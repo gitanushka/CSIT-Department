@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>CSIT Department</title>
+</head>
+<body>
+   <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" ></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-sharp fa-solid fa-x" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa-sharp fa-solid fa-bars" onclick="showmenu()"></i>
+    </nav>
+        <h1>Our Courses</h1>
+   </section> 
+
+  <!-- course -->
+
+  <section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Data Structures and Algorithm</h3>
+            <p>Curabitur ut dui gravida, commodo justo id, iaculis ipsum. Integer tempor mi sit amet erat fringilla tincidunt. Aenean in arcu massa. Ut efficitur</p>
+        </div>
+        <div class="course-col">
+            <h3>Operating System</h3>
+            <p>Curabitur ut dui gravida, commodo justo id, iaculis ipsum. Integer tempor mi sit amet erat fringilla tincidunt. Aenean in arcu massa. Ut efficitur</p>
+        </div>
+        <div class="course-col">
+            <h3>Database Management System</h3>
+            <p>Curabitur ut dui gravida, commodo justo id, iaculis ipsum. Integer tempor mi sit amet erat fringilla tincidunt. Aenean in arcu massa. Ut efficitur</p>
+        </div>
+    </div>
+   </section>
+
+   <!-- Facilities -->
+
+   <section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam</p> 
+
+    <div class="row">
+       <div class="facilities-col">
+           <img src="images/library.jpg" alt="Library">
+           <h3>Library</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam</p> 
+       </div>
+       <div class="facilities-col">
+           <img src="images/iotlab.jpg" alt="IoT Lab">
+           <h3>Iot Lab</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam</p> 
+       </div>
+       <div class="facilities-col">
+           <img src="images/meditation.jpg" alt="Meditation Room">
+           <h3>Meditation Room</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam</p> 
+       </div>
+    </div>
+</section>
+
+<!-- comment box -->
+
+   <section>
+    <div class="commeny-box">
+        <h3>Leave a comment</h3>
+        <form class="comment-form">
+            <input type="text" placeholder="Enter Name">
+            <input type="email" placeholder="Enter Email">
+            <textarea rows="5" placeholder="Your comment">
+            </textarea>
+            <button type="submit" class="hero-btn v-btn">Post Comment</button> 
+        </form>
+    </div>
+   </section>
+    
+
+
+   <!-- Footer -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam</p>
+    <div class="icons">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+    </div>
+</section>
+
+<!---Js for Toggle menu--->
+<script>
+   var navLinks = document.getElementById("navLinks");
+
+function showmenu(){
+    navLinks.style.right = "0px"
+}
+
+function hidemenu(){
+    navLinks.style.right = "-200px"
+}
+</script>
+</body>
+</html>

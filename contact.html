@@ -61,13 +61,16 @@
             </div>
         </div> 
         <div class="contact-col">
-            <form action="form_handler.php" method="post">
+            <form action="mailto:samparnjuyal@gmail.com" method="post" enctype="text/plain">
                 <input type="text" name="name" placeholder="Enter your name" required>
                 <input type="email" name="email" placeholder="Enter email address" required>
                 <input type="text" name="subject" placeholder="Enter your subject" required>
                 <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <input type="hidden" name="_next" value="https://csit-department.netlify.app/thanks.html">
                 <button type="submit" class="hero-btn v-btn">Send Message</button>
-            </form>
+                <!-- Student Name:<br><input type="text" name="sname"> <br>
+                Student Subject:<br><input type="text" name="ssubject"><br> -->
+             </form>
         </div>
       </div>
    </section>
